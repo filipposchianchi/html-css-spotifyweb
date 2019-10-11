@@ -5,6 +5,9 @@
   border: 0;
   box-sizing: border-box;
 }
+html{
+  scrollbar-color: grey transparent;
+}
 
 /* clearfix */
  .container-generale:after {
@@ -13,19 +16,116 @@
   clear: both;
 }
 .blocco-sinistra{
-  width: 15%;
+  width: 18%;
   height: calc(100vh - 100px);
   float: left;
-  background: red;
+  background: black;
+  overflow-y: scroll;
 }
 .blocco-destra{
-  width: 85%;
+  width: 82%;
   height: calc(100vh - 100px);
   float: left;
-  background: green;
+  background-image: linear-gradient(to right,#363449, #21202C);
 }
 .blocco-fondo{
   width: 100%;
   height: 100px;
-  background: black;
+  background: #282828;
+  position: fixed;
+  z-index: 999;
+}
+
+.blocco-sinistra .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.blocco-sinistra .logo img {
+  width: 50%;
+  filter: invert();
+  margin-bottom: 20px
+}
+/* regole left-nav */
+.blocco-sinistra nav ul {
+  list-style-type: none;
+  margin-left: 20px
+}
+.blocco-sinistra nav ul li {
+  margin-top: 10px;
+}
+.blocco-sinistra nav ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.blocco-sinistra nav img {
+  filter: invert();
+  margin-right: 10px;
+}
+
+.crea h6 {
+  color: #b3b3b3;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.crea img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  background: #b3b3b3;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.crea span {
+  color: #b3b3b3;
+}
+
+.playlist {
+  height: 120px;
+  margin-left: 20px;
+  color: #b3b3b3;
+  overflow-y: scroll;
+}
+.playlist ul {
+  list-style-type: none;
+}
+.playlist ul li {
+  margin-top: 10px;
+}
+.playlist ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.install {
+  width: 90%;
+  border-bottom: 1px solid grey;
+  margin: 0 auto;
+
+}
+.install img {
+  filter: invert();
+  width: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  vertical-align: bottom;
+  padding-bottom: 5px;
+}
+.install a, .utente a {
+  color: #b3b3b3;
+  text-decoration: none;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.utente img {
+  width: 35px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  vertical-align: bottom;
 }
