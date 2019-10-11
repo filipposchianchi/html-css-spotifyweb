@@ -26,7 +26,10 @@ html{
   width: 82%;
   height: calc(100vh - 100px);
   float: left;
-  background-image: linear-gradient(to right,#363449, #21202C);
+  background-image: linear-gradient(to right bottom, rgb(111, 83, 42), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 .blocco-fondo{
   width: 100%;
@@ -41,14 +44,15 @@ html{
   margin-left: 20px;
 }
 .blocco-sinistra .logo img {
-  width: 50%;
+  width: 60%;
   filter: invert();
   margin-bottom: 20px
 }
 /* regole left-nav */
 .blocco-sinistra nav ul {
   list-style-type: none;
-  margin-left: 20px
+  margin-left: 20px;
+
 }
 .blocco-sinistra nav ul li {
   margin-top: 10px;
@@ -62,6 +66,9 @@ html{
   margin-right: 10px;
 }
 
+.crea {
+  padding-bottom: 8px;
+}
 .crea h6 {
   color: #b3b3b3;
   font-size: 15px;
@@ -128,4 +135,78 @@ html{
   margin-left: 20px;
   margin-right: 10px;
   vertical-align: bottom;
+}
+
+/* REGOLE BLOCCO DESTRA */
+.blocco-destra nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.blocco-destra nav ul {
+  list-style-type: none;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+.blocco-destra nav ul li {
+  display: inline-block;
+}
+.blocco-destra nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-right: 30px
+}
+.blocco-destra nav .sottolineato {
+  width: 30px;
+  border-bottom: 3px solid green;
+  margin: 0 auto;
+  transform: translate(-40%, 0);
+}
+
+.blocco-destra .header {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.blocco-destra .header h2 {
+  color: white;
+  font-size: 30px;
+}
+.blocco-destra .header h6 {
+  color: #b3b3b3;
+  font-size: 15px;
+}
+.blocco-destra .header a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 15px;
+}
+.blocco-destra .musica {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.blocco-destra .musica .riquadro {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+.blocco-destra .musica .riquadro a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.blocco-destra .musica img {
+  margin-bottom: 10px;
+}
+
+.blocco-destra .musica .tonda {
+  border-radius: 50%;
+  width: 162px;
 }
