@@ -63,6 +63,10 @@ html{
 .blocco-sinistra nav ul li a {
   color: #b3b3b3;
   text-decoration: none;
+  transition: color 1s;
+}
+.blocco-sinistra nav ul li a:hover{
+  color: white;
 }
 .blocco-sinistra nav img {
   filter: invert();
@@ -87,9 +91,19 @@ html{
   background: #b3b3b3;
   margin-right: 10px;
   vertical-align: bottom;
+  transition: background 1s;
+}
+.crea img:hover {
+  background: white;
+  cursor:pointer;
 }
 .crea span {
   color: #b3b3b3;
+  transition: color 1s;
+}
+.crea span:hover {
+  color: white;
+  cursor:pointer;
 }
 
 .playlist {
@@ -162,9 +176,10 @@ html{
   display: inline-block;
 }
 .blocco-destra nav ul li a {
-  color: white;
+  color: #b3b3b3;
   text-decoration: none;
-  margin-right: 30px
+  margin-right: 30px;
+  transition: color 1s;
 }
 .blocco-destra nav .sottolineato {
   width: 30px;
@@ -172,6 +187,10 @@ html{
   margin: 0 auto;
   transform: translate(-40%, 0);
 }
+.blocco-destra nav ul li a:hover {
+  color: white;
+}
+
 
 .blocco-destra .header {
   margin-right: 60px;
@@ -218,6 +237,30 @@ html{
 .blocco-destra .musica img {
   margin-bottom: 10px;
 }
+.blocco-destra .musica .immagine:hover img {
+  filter:opacity(40%);
+}
+.blocco-destra .musica .riquadro .immagine{
+  position: relative;
+}
+.blocco-destra .musica .riquadro .immagine i {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  padding: 15px;
+}
+.blocco-destra .musica .riquadro .immagine:hover i{
+  display: block;
+  cursor: pointer;
+}
+.blocco-destra .musica .riquadro .immagine i:hover {
+  font-size: 22px;
+}
+
 
 .blocco-destra .musica .tonda {
   border-radius: 50%;
