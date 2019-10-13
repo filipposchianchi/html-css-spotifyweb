@@ -255,12 +255,14 @@ html{
   margin-right: 30px;
 }
 .player .comandi {
-  width: 150px;
   height: 30px;
   display: flex;
   justify-content: space-between;
   color: #b3b3b3;
   align-items: center;
+}
+.player .fas {
+  margin-left: 8px;
 }
 .fa-play {
   font-size: 13px;
@@ -268,7 +270,7 @@ html{
   border-radius: 50%;
   padding: 7px;
 }
-.player .lunghezza {
+.blocco-fondo .lunghezza {
   width: 400px;
   height: 20px;
   border-bottom: 2px solid #b3b3b3;
@@ -293,7 +295,7 @@ html{
 /* regole visibilità blocco sinistra */
  @media screen and (max-width: 992px) {
 
-  .invisibile {
+  .blocco-sinistra {
     display: none;
   }
 
@@ -322,7 +324,8 @@ html{
   }
 }
 
-@media screen and (max-width: 855px) {
+/* regole responsive blocco fondo */
+@media screen and (min-width: 676px) and (max-width: 855px) {
 
   .blocco-fondo .canzone img {
     visibility: collapse;
@@ -330,5 +333,24 @@ html{
   .blocco-fondo .lunghezza {
     width: 300px;
   }
+
+}
+
+@media screen and (max-width: 675px) {
+
+  .blocco-fondo .fa-random, .blocco-fondo .fa-redo-alt, .blocco-fondo .lunghezza, .blocco-fondo .canzone img{
+    visibility:collapse;
+  }
+  .blocco-fondo .lunghezza {
+    width: 0;
+  }
+  .volume {
+    justify-content: flex-start;
+  }
+  .player {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 
 }
