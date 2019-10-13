@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Spotify Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
   </head>
   <body>
 
     <div class="container-generale">
-      <div class="blocco-sinistra">
+      <div class="blocco-sinistra invisibile">
         <div class="logo">
           <img src="assets/img/logo.svg" alt="logo">
         </div>
@@ -165,12 +167,48 @@
           </div>
         </div>
 
-
+      </div>
+      <div class="blocco-sinistra-hamurger visibile">
+        <i class="fas fa-bars"></i>
 
       </div>
     </div>
 
       <div class="blocco-fondo">
+        <div class="canzone">
+          <img src="assets/img/song.png" alt="song">
+          <div class="info-song">
+            <a href="#">Spectrum</a> <br>
+            <a href="#">Florence + The Machine</a>
+          </div>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="player">
+          <div class="comandi">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
+
+          </div>
+          <div class="lunghezza">
+          </div>
+
+
+
+        </div>
+
+        <div class="volume">
+          <i class="fas fa-list"></i>
+          <i class="fas fa-laptop-code"></i>
+          <i class="fas fa-volume-up"></i>
+          <div class="barra-volume">
+
+          </div>
+
+        </div>
+
 
       </div>
 
