@@ -382,7 +382,7 @@ html{
 @media screen and (max-width: 675px) {
 
   .blocco-fondo .fa-random, .blocco-fondo .fa-redo-alt, .blocco-fondo .lunghezza, .blocco-fondo .canzone img{
-    visibility:collapse;
+    display: none;
   }
   .blocco-fondo .lunghezza {
     width: 0;
