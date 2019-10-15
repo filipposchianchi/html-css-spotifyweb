@@ -128,6 +128,9 @@ html{
   text-decoration: none;
   color: #b3b3b3;
 }
+.playlist ul li a:hover, .install a:hover, .utente a:hover{
+  color: white;
+}
 .install-utente {
   height: 22%;
   display: flex;
@@ -291,13 +294,28 @@ html{
   height: 60px;
   margin-right: 10px;
 }
-.canzone a {
+#titolo {
   color:white;
   font-size: 13px;
   text-decoration: none;
+
+}
+#titolo:hover {
+  text-decoration: underline;
+}
+#artista {
+  color: #b3b3b3;
+  font-size: 12px;
+  text-decoration: none;
+}
+#artista:hover {
+  color: white;
 }
 .canzone i {
   margin-left: 10px;
+  color: #b3b3b3;
+}
+.canzone i:hover{
   color: white;
 }
 .player {
@@ -316,6 +334,13 @@ html{
   color: #b3b3b3;
   align-items: center;
 }
+
+.comandi .fa-random:hover, .comandi .fa-step-backward:hover, .comandi .fa-play:hover, .comandi .fa-play:hover, .comandi .fa-step-forward:hover, .comandi .fa-redo-alt:hover, .volume .fa-list:hover, .volume .fa-laptop-code:hover, .volume .fa-volume-up:hover {
+  color: white;
+}
+.comandi .fa-play:hover{
+  font-size: 14px;
+}
 .player .fas {
   margin-left: 8px;
 }
@@ -329,6 +354,18 @@ html{
   width: 400px;
   height: 20px;
   border-bottom: 2px solid #b3b3b3;
+  position: relative;
+}
+.player .pallina{
+  font-size: 130px;
+  color: white;
+  position: absolute;
+  top: -127px;
+  right: 385px;
+  display: none;
+}
+.player .lunghezza:hover .pallina {
+  display: block;
 }
 
 .volume {
@@ -344,8 +381,25 @@ html{
 }
 .barra-volume {
   width: 60px;
-  border-top: 2px solid #b3b3b3;
+  border-top: 4px solid #b3b3b3;
+  position: relative;
 }
+.volume .pallina{
+  font-size: 130px;
+  color: white;
+  position: absolute;
+  top: -147px;
+  right: -10px;
+  display: none;
+}
+.barra-volume:hover .pallina {
+  display: inline;
+}
+.barra-volume:hover
+{
+   border-top: 4px solid green;
+}
+
 
 /* regole visibilità blocco sinistra */
  @media screen and (max-width: 992px) {
@@ -408,7 +462,7 @@ html{
   }
 
 }
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 550px) and (min-width: 992px) {
 
 .blocco-sinistra {
   display: block;
